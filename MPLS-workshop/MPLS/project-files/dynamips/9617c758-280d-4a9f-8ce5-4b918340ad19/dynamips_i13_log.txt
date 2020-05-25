@@ -1,0 +1,66 @@
+Apr 12 22:06:32.800 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 12 22:06:32.802 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63461.
+Apr 12 22:06:32.972 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 12 22:06:33.010 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\geo\GNS3\projects\MPLS base\project-files\dynamips 
+Apr 12 22:06:33.010 GENERAL: working_dir=C:\Users\geo\GNS3\projects\MPLS base\project-files\dynamips
+Apr 12 22:06:33.053 HYPERVISOR: exec_cmd: vm create CE4 16 c3600 
+Apr 12 22:06:33.056 VM: VM CE4 created.
+Apr 12 22:06:33.095 HYPERVISOR: exec_cmd: vm set_con_tcp_port CE4 5011 
+Apr 12 22:06:33.121 HYPERVISOR: exec_cmd: c3600 get_mac_addr CE4 
+Apr 12 22:06:33.163 HYPERVISOR: exec_cmd: vm set_ios CE4 C:/Users/geo/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Apr 12 22:06:33.204 HYPERVISOR: exec_cmd: vm get_status CE4 
+Apr 12 22:06:33.230 HYPERVISOR: exec_cmd: vm slot_add_binding CE4 1 0 NM-4E 
+Apr 12 22:06:33.272 HYPERVISOR: exec_cmd: vm get_status CE4 
+Apr 12 22:06:33.315 HYPERVISOR: exec_cmd: vm slot_add_binding CE4 0 0 NM-1FE-TX 
+Apr 12 22:06:33.349 HYPERVISOR: exec_cmd: vm get_status CE4 
+Apr 12 22:06:33.389 HYPERVISOR: exec_cmd: vm set_idle_pc CE4 0x604f5184 
+Apr 12 22:06:33.435 HYPERVISOR: exec_cmd: vm set_ram CE4 192 
+Apr 12 22:06:33.460 HYPERVISOR: exec_cmd: vm set_nvram CE4 256 
+Apr 12 22:06:33.497 HYPERVISOR: exec_cmd: c3600 set_mac_addr CE4 cc10.1478.0000 
+Apr 12 22:06:33.528 HYPERVISOR: exec_cmd: vm set_exec_area CE4 64 
+Apr 12 22:06:33.561 HYPERVISOR: exec_cmd: vm set_config CE4 configs/i16_startup-config.cfg 
+Apr 12 22:06:34.636 HYPERVISOR: exec_cmd: nio create_udp udp-5223f567-17b1-4023-9267-9a6d1727d1aa 10030 127.0.0.1 10031 
+Apr 12 22:06:34.664 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CE4 0 0 udp-5223f567-17b1-4023-9267-9a6d1727d1aa 
+Apr 12 22:06:34.704 HYPERVISOR: exec_cmd: vm get_status CE4 
+Apr 12 22:06:36.595 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Apr 12 22:06:36.596 VM: VM Ghost created.
+Apr 12 22:06:36.611 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/geo/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Apr 12 22:06:36.618 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 12 22:06:36.625 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3640-jk9s-mz.124-16.image-192.ghost 
+Apr 12 22:06:36.631 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Apr 12 22:06:36.638 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 12 22:06:36.646 HYPERVISOR: exec_cmd: vm start Ghost 
+Apr 12 22:06:36.931 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 12 22:06:36.940 HYPERVISOR: exec_cmd: vm stop Ghost 
+Apr 12 22:06:37.101 VM: VM Ghost shutdown.
+Apr 12 22:06:37.105 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Apr 12 22:06:37.105 VM: VM Ghost destroyed.
+Apr 12 22:06:37.114 HYPERVISOR: exec_cmd: vm set_ghost_status CE4 2 
+Apr 12 22:06:37.131 HYPERVISOR: exec_cmd: vm set_ghost_file CE4 c3640-jk9s-mz.124-16.image-192.ghost 
+Apr 12 22:06:37.138 HYPERVISOR: exec_cmd: vm get_status CE4 
+Apr 12 22:06:37.152 HYPERVISOR: exec_cmd: vm start CE4 
+Apr 12 22:07:19.768 HYPERVISOR: exec_cmd: vm get_status CE4 
+Apr 12 22:07:19.806 HYPERVISOR: exec_cmd: vm stop CE4 
+Apr 12 22:07:19.898 VM: VM CE4 shutdown.
+Apr 12 22:07:19.903 HYPERVISOR: exec_cmd: vm extract_config CE4 
+Apr 12 22:10:33.919 HYPERVISOR: exec_cmd: vm get_status CE4 
+Apr 12 22:10:33.955 HYPERVISOR: exec_cmd: vm start CE4 
+Apr 12 22:11:39.848 HYPERVISOR: exec_cmd: vm get_status CE4 
+Apr 12 22:11:39.898 HYPERVISOR: exec_cmd: vm stop CE4 
+Apr 12 22:11:40.013 VM: VM CE4 shutdown.
+Apr 12 22:11:40.019 HYPERVISOR: exec_cmd: vm extract_config CE4 
+Apr 12 22:11:40.041 HYPERVISOR: exec_cmd: vm get_status CE4 
+Apr 12 22:11:40.098 HYPERVISOR: exec_cmd: vm start CE4 
+Apr 12 22:13:18.668 HYPERVISOR: exec_cmd: vm extract_config CE4 
+Apr 12 22:13:20.752 HYPERVISOR: exec_cmd: vm get_status CE4 
+Apr 12 22:13:20.788 HYPERVISOR: exec_cmd: vm stop CE4 
+Apr 12 22:13:20.882 VM: VM CE4 shutdown.
+Apr 12 22:13:20.889 HYPERVISOR: exec_cmd: vm extract_config CE4 
+Apr 12 22:13:23.343 HYPERVISOR: exec_cmd: vm extract_config CE4 
+Apr 12 22:16:05.661 HYPERVISOR: exec_cmd: vm get_status CE4 
+Apr 12 22:16:05.748 HYPERVISOR: exec_cmd: vm extract_config CE4 
+Apr 12 22:16:05.839 HYPERVISOR: exec_cmd: vm delete CE4 
+Apr 12 22:16:05.839 VM: VM CE4 destroyed.
+Apr 12 22:16:05.927 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 12 22:16:06.181 HYPERVISOR: Stopped.
+Apr 12 22:16:06.181 GENERAL: reset done.

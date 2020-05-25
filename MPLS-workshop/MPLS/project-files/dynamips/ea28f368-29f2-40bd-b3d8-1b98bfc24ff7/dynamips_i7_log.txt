@@ -1,0 +1,62 @@
+Apr 12 22:06:31.763 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 12 22:06:31.765 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63450.
+Apr 12 22:06:32.007 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 12 22:06:32.040 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\geo\GNS3\projects\MPLS base\project-files\dynamips 
+Apr 12 22:06:32.040 GENERAL: working_dir=C:\Users\geo\GNS3\projects\MPLS base\project-files\dynamips
+Apr 12 22:06:32.075 HYPERVISOR: exec_cmd: vm create P7 7 c3600 
+Apr 12 22:06:32.077 VM: VM P7 created.
+Apr 12 22:06:32.111 HYPERVISOR: exec_cmd: vm set_con_tcp_port P7 5006 
+Apr 12 22:06:32.145 HYPERVISOR: exec_cmd: c3600 get_mac_addr P7 
+Apr 12 22:06:32.178 HYPERVISOR: exec_cmd: vm set_ios P7 C:/Users/geo/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Apr 12 22:06:32.211 HYPERVISOR: exec_cmd: vm get_status P7 
+Apr 12 22:06:32.245 HYPERVISOR: exec_cmd: vm slot_add_binding P7 1 0 NM-4E 
+Apr 12 22:06:32.278 HYPERVISOR: exec_cmd: vm get_status P7 
+Apr 12 22:06:32.313 HYPERVISOR: exec_cmd: vm slot_add_binding P7 0 0 NM-1FE-TX 
+Apr 12 22:06:32.346 HYPERVISOR: exec_cmd: vm get_status P7 
+Apr 12 22:06:32.388 HYPERVISOR: exec_cmd: vm set_idle_pc P7 0x604f5184 
+Apr 12 22:06:32.436 HYPERVISOR: exec_cmd: vm set_ram P7 192 
+Apr 12 22:06:32.501 HYPERVISOR: exec_cmd: vm set_nvram P7 256 
+Apr 12 22:06:32.534 HYPERVISOR: exec_cmd: c3600 set_mac_addr P7 cc07.0930.0000 
+Apr 12 22:06:32.563 HYPERVISOR: exec_cmd: vm set_exec_area P7 64 
+Apr 12 22:06:32.598 HYPERVISOR: exec_cmd: vm set_config P7 configs/i7_startup-config.cfg 
+Apr 12 22:06:33.648 HYPERVISOR: exec_cmd: nio create_udp udp-e1d25666-4233-42a6-84a1-0b390769a057 10007 127.0.0.1 10006 
+Apr 12 22:06:33.686 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P7 1 3 udp-e1d25666-4233-42a6-84a1-0b390769a057 
+Apr 12 22:06:33.722 HYPERVISOR: exec_cmd: vm get_status P7 
+Apr 12 22:06:33.769 HYPERVISOR: exec_cmd: nio create_udp udp-73977d65-97a1-49fb-85dc-624430718227 10008 127.0.0.1 10009 
+Apr 12 22:06:33.806 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P7 1 2 udp-73977d65-97a1-49fb-85dc-624430718227 
+Apr 12 22:06:33.847 HYPERVISOR: exec_cmd: vm get_status P7 
+Apr 12 22:06:33.902 HYPERVISOR: exec_cmd: nio create_udp udp-734be076-ae78-4583-9562-3bf45ec6d3bf 10012 127.0.0.1 10013 
+Apr 12 22:06:33.937 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P7 1 1 udp-734be076-ae78-4583-9562-3bf45ec6d3bf 
+Apr 12 22:06:33.967 HYPERVISOR: exec_cmd: vm get_status P7 
+Apr 12 22:06:34.381 HYPERVISOR: exec_cmd: nio create_udp udp-ffd0f090-9879-41ce-a1e7-c325967c0a57 10023 127.0.0.1 10022 
+Apr 12 22:06:34.403 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P7 1 0 udp-ffd0f090-9879-41ce-a1e7-c325967c0a57 
+Apr 12 22:06:34.424 HYPERVISOR: exec_cmd: vm get_status P7 
+Apr 12 22:06:37.487 HYPERVISOR: exec_cmd: vm set_ghost_status P7 2 
+Apr 12 22:06:37.530 HYPERVISOR: exec_cmd: vm set_ghost_file P7 c3640-jk9s-mz.124-16.image-192.ghost 
+Apr 12 22:06:37.575 HYPERVISOR: exec_cmd: vm get_status P7 
+Apr 12 22:06:37.619 HYPERVISOR: exec_cmd: vm start P7 
+Apr 12 22:07:19.999 HYPERVISOR: exec_cmd: vm get_status P7 
+Apr 12 22:07:20.036 HYPERVISOR: exec_cmd: vm stop P7 
+Apr 12 22:07:20.194 VM: VM P7 shutdown.
+Apr 12 22:07:20.222 HYPERVISOR: exec_cmd: vm extract_config P7 
+Apr 12 22:10:34.326 HYPERVISOR: exec_cmd: vm get_status P7 
+Apr 12 22:10:34.384 HYPERVISOR: exec_cmd: vm start P7 
+Apr 12 22:11:40.474 HYPERVISOR: exec_cmd: vm get_status P7 
+Apr 12 22:11:40.511 HYPERVISOR: exec_cmd: vm stop P7 
+Apr 12 22:11:40.692 VM: VM P7 shutdown.
+Apr 12 22:11:40.703 HYPERVISOR: exec_cmd: vm extract_config P7 
+Apr 12 22:11:40.718 HYPERVISOR: exec_cmd: vm get_status P7 
+Apr 12 22:11:40.741 HYPERVISOR: exec_cmd: vm start P7 
+Apr 12 22:13:18.619 HYPERVISOR: exec_cmd: vm extract_config P7 
+Apr 12 22:13:20.991 HYPERVISOR: exec_cmd: vm get_status P7 
+Apr 12 22:13:21.033 HYPERVISOR: exec_cmd: vm stop P7 
+Apr 12 22:13:21.172 VM: VM P7 shutdown.
+Apr 12 22:13:21.177 HYPERVISOR: exec_cmd: vm extract_config P7 
+Apr 12 22:13:23.285 HYPERVISOR: exec_cmd: vm extract_config P7 
+Apr 12 22:16:05.657 HYPERVISOR: exec_cmd: vm get_status P7 
+Apr 12 22:16:05.743 HYPERVISOR: exec_cmd: vm extract_config P7 
+Apr 12 22:16:05.834 HYPERVISOR: exec_cmd: vm delete P7 
+Apr 12 22:16:05.834 VM: VM P7 destroyed.
+Apr 12 22:16:05.923 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 12 22:16:06.117 HYPERVISOR: Stopped.
+Apr 12 22:16:06.117 GENERAL: reset done.

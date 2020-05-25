@@ -1,0 +1,62 @@
+Apr 12 22:06:30.863 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 12 22:06:30.865 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63442.
+Apr 12 22:06:30.985 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 12 22:06:31.020 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\geo\GNS3\projects\MPLS base\project-files\dynamips 
+Apr 12 22:06:31.120 GENERAL: working_dir=C:\Users\geo\GNS3\projects\MPLS base\project-files\dynamips
+Apr 12 22:06:31.150 HYPERVISOR: exec_cmd: vm create P5 5 c3600 
+Apr 12 22:06:31.152 VM: VM P5 created.
+Apr 12 22:06:31.184 HYPERVISOR: exec_cmd: vm set_con_tcp_port P5 5004 
+Apr 12 22:06:31.218 HYPERVISOR: exec_cmd: c3600 get_mac_addr P5 
+Apr 12 22:06:31.251 HYPERVISOR: exec_cmd: vm set_ios P5 C:/Users/geo/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Apr 12 22:06:31.284 HYPERVISOR: exec_cmd: vm get_status P5 
+Apr 12 22:06:31.318 HYPERVISOR: exec_cmd: vm slot_add_binding P5 1 0 NM-4E 
+Apr 12 22:06:31.351 HYPERVISOR: exec_cmd: vm get_status P5 
+Apr 12 22:06:31.384 HYPERVISOR: exec_cmd: vm slot_add_binding P5 0 0 NM-1FE-TX 
+Apr 12 22:06:31.419 HYPERVISOR: exec_cmd: vm get_status P5 
+Apr 12 22:06:31.458 HYPERVISOR: exec_cmd: vm set_idle_pc P5 0x604f5184 
+Apr 12 22:06:31.521 HYPERVISOR: exec_cmd: vm set_ram P5 192 
+Apr 12 22:06:31.553 HYPERVISOR: exec_cmd: vm set_nvram P5 256 
+Apr 12 22:06:31.582 HYPERVISOR: exec_cmd: c3600 set_mac_addr P5 cc05.d810.0000 
+Apr 12 22:06:31.618 HYPERVISOR: exec_cmd: vm set_exec_area P5 64 
+Apr 12 22:06:31.653 HYPERVISOR: exec_cmd: vm set_config P5 configs/i5_startup-config.cfg 
+Apr 12 22:06:33.303 HYPERVISOR: exec_cmd: nio create_udp udp-82571cba-f532-4eb7-a820-7d7f36b90499 10000 127.0.0.1 10001 
+Apr 12 22:06:33.342 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P5 1 2 udp-82571cba-f532-4eb7-a820-7d7f36b90499 
+Apr 12 22:06:33.381 HYPERVISOR: exec_cmd: vm get_status P5 
+Apr 12 22:06:33.481 HYPERVISOR: exec_cmd: nio create_udp udp-804f3768-b872-43fd-b9cf-307c84bf4ab0 10003 127.0.0.1 10002 
+Apr 12 22:06:33.510 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P5 1 1 udp-804f3768-b872-43fd-b9cf-307c84bf4ab0 
+Apr 12 22:06:33.549 HYPERVISOR: exec_cmd: vm get_status P5 
+Apr 12 22:06:33.814 HYPERVISOR: exec_cmd: nio create_udp udp-3d0df256-58d1-4cb6-8b2a-4459b3a39b7e 10011 127.0.0.1 10010 
+Apr 12 22:06:33.851 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P5 1 3 udp-3d0df256-58d1-4cb6-8b2a-4459b3a39b7e 
+Apr 12 22:06:33.892 HYPERVISOR: exec_cmd: vm get_status P5 
+Apr 12 22:06:34.493 HYPERVISOR: exec_cmd: nio create_udp udp-ad71cca0-4f19-4c84-9379-7070df2d6144 10026 127.0.0.1 10027 
+Apr 12 22:06:34.519 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P5 1 0 udp-ad71cca0-4f19-4c84-9379-7070df2d6144 
+Apr 12 22:06:34.545 HYPERVISOR: exec_cmd: vm get_status P5 
+Apr 12 22:06:37.662 HYPERVISOR: exec_cmd: vm set_ghost_status P5 2 
+Apr 12 22:06:37.719 HYPERVISOR: exec_cmd: vm set_ghost_file P5 c3640-jk9s-mz.124-16.image-192.ghost 
+Apr 12 22:06:37.742 HYPERVISOR: exec_cmd: vm get_status P5 
+Apr 12 22:06:37.765 HYPERVISOR: exec_cmd: vm start P5 
+Apr 12 22:07:20.051 HYPERVISOR: exec_cmd: vm get_status P5 
+Apr 12 22:07:20.086 HYPERVISOR: exec_cmd: vm stop P5 
+Apr 12 22:07:20.240 VM: VM P5 shutdown.
+Apr 12 22:07:20.279 HYPERVISOR: exec_cmd: vm extract_config P5 
+Apr 12 22:10:34.354 HYPERVISOR: exec_cmd: vm get_status P5 
+Apr 12 22:10:34.403 HYPERVISOR: exec_cmd: vm start P5 
+Apr 12 22:11:40.581 HYPERVISOR: exec_cmd: vm get_status P5 
+Apr 12 22:11:40.622 HYPERVISOR: exec_cmd: vm stop P5 
+Apr 12 22:11:40.796 VM: VM P5 shutdown.
+Apr 12 22:11:40.832 HYPERVISOR: exec_cmd: vm extract_config P5 
+Apr 12 22:11:40.868 HYPERVISOR: exec_cmd: vm get_status P5 
+Apr 12 22:11:40.890 HYPERVISOR: exec_cmd: vm start P5 
+Apr 12 22:13:18.652 HYPERVISOR: exec_cmd: vm extract_config P5 
+Apr 12 22:13:21.056 HYPERVISOR: exec_cmd: vm get_status P5 
+Apr 12 22:13:21.087 HYPERVISOR: exec_cmd: vm stop P5 
+Apr 12 22:13:21.235 VM: VM P5 shutdown.
+Apr 12 22:13:21.259 HYPERVISOR: exec_cmd: vm extract_config P5 
+Apr 12 22:13:23.324 HYPERVISOR: exec_cmd: vm extract_config P5 
+Apr 12 22:16:05.675 HYPERVISOR: exec_cmd: vm get_status P5 
+Apr 12 22:16:05.765 HYPERVISOR: exec_cmd: vm extract_config P5 
+Apr 12 22:16:05.855 HYPERVISOR: exec_cmd: vm delete P5 
+Apr 12 22:16:05.855 VM: VM P5 destroyed.
+Apr 12 22:16:05.941 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 12 22:16:06.181 HYPERVISOR: Stopped.
+Apr 12 22:16:06.181 GENERAL: reset done.

@@ -1,0 +1,24 @@
+Apr 09 15:43:21.555 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 09 15:43:21.557 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56207.
+Apr 09 15:43:21.671 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 09 15:43:21.706 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\geo\GNS3\projects\MPLS\project-files\dynamips 
+Apr 09 15:43:21.707 GENERAL: working_dir=C:\Users\geo\GNS3\projects\MPLS\project-files\dynamips
+Apr 09 15:43:21.741 HYPERVISOR: exec_cmd: vm create Client_Core 9 c3600 
+Apr 09 15:43:21.743 VM: VM Client_Core created.
+Apr 09 15:43:21.778 HYPERVISOR: exec_cmd: vm set_con_tcp_port Client_Core 5013 
+Apr 09 15:43:21.814 HYPERVISOR: exec_cmd: c3600 get_mac_addr Client_Core 
+Apr 09 15:43:21.842 HYPERVISOR: exec_cmd: vm set_ram Client_Core 192 
+Apr 09 15:43:21.879 HYPERVISOR: exec_cmd: vm get_status Client_Core 
+Apr 09 15:43:21.915 HYPERVISOR: exec_cmd: vm slot_add_binding Client_Core 1 0 NM-4E 
+Apr 09 15:43:21.943 HYPERVISOR: exec_cmd: vm set_ios Client_Core C:/Users/geo/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Apr 09 15:43:21.979 HYPERVISOR: exec_cmd: vm set_exec_area Client_Core 64 
+Apr 09 15:43:22.015 HYPERVISOR: exec_cmd: vm get_status Client_Core 
+Apr 09 15:43:22.043 HYPERVISOR: exec_cmd: vm slot_add_binding Client_Core 0 0 NM-1FE-TX 
+Apr 09 15:43:22.080 HYPERVISOR: exec_cmd: c3600 set_mac_addr Client_Core cc09.1394.0000 
+Apr 09 15:43:22.115 HYPERVISOR: exec_cmd: vm set_nvram Client_Core 256 
+Apr 09 15:43:22.145 HYPERVISOR: exec_cmd: vm get_status Client_Core 
+Apr 09 15:43:22.182 HYPERVISOR: exec_cmd: vm set_idle_pc Client_Core 0x604f5184 
+Apr 09 15:43:22.220 HYPERVISOR: exec_cmd: vm set_config Client_Core configs/i9_startup-config.cfg 
+Apr 09 15:43:23.919 HYPERVISOR: exec_cmd: nio create_udp udp-9659d719-594e-43cc-8bce-207a931f3f9e 10036 127.0.0.1 10037 
+Apr 09 15:43:23.952 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Client_Core 0 0 udp-9659d719-594e-43cc-8bce-207a931f3f9e 
+Apr 09 15:43:23.986 HYPERVISOR: exec_cmd: vm get_status Client_Core 

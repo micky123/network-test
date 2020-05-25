@@ -1,0 +1,46 @@
+cygwin warning:
+  MS-DOS style path detected: C:\Users\kevin\Documents\Prosit A4\Prosit 2.09 MPLS\MPLS base \xC3\xA9tudiants\MPLS base\project-files\dynamips
+  Preferred POSIX equivalent is: /cygdrive/c/Users/kevin/Documents/Prosit A4/Prosit 2.09 MPLS/MPLS base \xC3\xA9tudiants/MPLS base/project-files/dynamips
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+vm_mmap_open_file: unable to open file 'c3600_i1_nvram' (No such file or directory)
+C3600 'PE4': RAM_ghost: unable to create device (filename=(null)).
+% No memory map for code execution at 0x0
+% Unable to create instruction block for vaddr=0x0
+insn_page_compile: unable to create JIT block.
+VM 'PE4': unable to compile block for CPU0 PC=0x0
+VM: Unable to store instance 'Ghost' in registry!
+VM Ghost: unable to create instance!
+VM: Unable to store instance 'Ghost' in registry!
+VM Ghost: unable to create instance!
+VM: Unable to store instance 'Ghost' in registry!
+VM Ghost: unable to create instance!
+VM: Unable to store instance 'Ghost' in registry!
+VM Ghost: unable to create instance!
+Cisco Router Simulation Platform (version 0.2.17-x86/Windows stable)
+Copyright (c) 2005-2011 Christophe Fillot.
+Build date: Aug 28 2017 08:26:42
+
+Log file: writing to dynamips_i1_log.txt
+Hypervisor TCP control server started (IP localhost port 50479).
+CPU0: carved JIT exec zone of 64 Mb into 2048 pages of 32 Kb.
+NVRAM is empty, setting config register to 0x2142
+C3600 instance 'PE4' (id 1):
+  VM Status  : 0
+  RAM size   : 192 Mb
+  NVRAM size : 256 Kb
+  Chassis    : 3640
+  IOS image  : C:/Users/kevin/GNS3/images/IOS/c3640-jk9s-mz.124-16.image
+
+Loading ELF file 'C:/Users/kevin/GNS3/images/IOS/c3640-jk9s-mz.124-16.image'...
+ELF loading skipped, using a ghost RAM file.
+ELF entry point: 0x80008000
+
+C3600 'PE4': starting simulation (CPU0 PC=0xffffffffbfc00000), JIT enabled.
+
+C3600 'PE4': stopping simulation.
+Hypervisor: closing control sockets.
+Hypervisor: closing remote client connections.
+Shutdown in progress...
+Shutdown completed.

@@ -1,0 +1,56 @@
+Apr 12 22:06:30.796 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 12 22:06:30.798 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63440.
+Apr 12 22:06:30.976 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 12 22:06:31.011 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\geo\GNS3\projects\MPLS base\project-files\dynamips 
+Apr 12 22:06:31.115 GENERAL: working_dir=C:\Users\geo\GNS3\projects\MPLS base\project-files\dynamips
+Apr 12 22:06:31.141 HYPERVISOR: exec_cmd: vm create PE3 2 c3600 
+Apr 12 22:06:31.144 VM: VM PE3 created.
+Apr 12 22:06:31.176 HYPERVISOR: exec_cmd: vm set_con_tcp_port PE3 5001 
+Apr 12 22:06:31.210 HYPERVISOR: exec_cmd: c3600 get_mac_addr PE3 
+Apr 12 22:06:31.243 HYPERVISOR: exec_cmd: vm set_ios PE3 C:/Users/geo/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Apr 12 22:06:31.276 HYPERVISOR: exec_cmd: vm get_status PE3 
+Apr 12 22:06:31.310 HYPERVISOR: exec_cmd: vm slot_add_binding PE3 1 0 NM-4E 
+Apr 12 22:06:31.343 HYPERVISOR: exec_cmd: vm get_status PE3 
+Apr 12 22:06:31.376 HYPERVISOR: exec_cmd: vm slot_add_binding PE3 0 0 NM-1FE-TX 
+Apr 12 22:06:31.410 HYPERVISOR: exec_cmd: vm get_status PE3 
+Apr 12 22:06:31.450 HYPERVISOR: exec_cmd: vm set_idle_pc PE3 0x604f5184 
+Apr 12 22:06:31.511 HYPERVISOR: exec_cmd: vm set_ram PE3 192 
+Apr 12 22:06:31.545 HYPERVISOR: exec_cmd: vm set_nvram PE3 256 
+Apr 12 22:06:31.574 HYPERVISOR: exec_cmd: c3600 set_mac_addr PE3 cc02.bf38.0000 
+Apr 12 22:06:31.609 HYPERVISOR: exec_cmd: vm set_exec_area PE3 64 
+Apr 12 22:06:31.639 HYPERVISOR: exec_cmd: vm set_config PE3 configs/i2_startup-config.cfg 
+Apr 12 22:06:33.591 HYPERVISOR: exec_cmd: nio create_udp udp-cf4af36b-7fc5-43ca-9223-b82850bf8f80 10005 127.0.0.1 10004 
+Apr 12 22:06:33.634 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE3 1 0 udp-cf4af36b-7fc5-43ca-9223-b82850bf8f80 
+Apr 12 22:06:33.670 HYPERVISOR: exec_cmd: vm get_status PE3 
+Apr 12 22:06:34.597 HYPERVISOR: exec_cmd: nio create_udp udp-b4ac10ce-0e4f-4e2a-bea9-f1e24288ef6c 10028 127.0.0.1 10029 
+Apr 12 22:06:34.644 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE3 0 0 udp-b4ac10ce-0e4f-4e2a-bea9-f1e24288ef6c 
+Apr 12 22:06:34.676 HYPERVISOR: exec_cmd: vm get_status PE3 
+Apr 12 22:06:38.104 HYPERVISOR: exec_cmd: vm set_ghost_status PE3 2 
+Apr 12 22:06:38.155 HYPERVISOR: exec_cmd: vm set_ghost_file PE3 c3640-jk9s-mz.124-16.image-192.ghost 
+Apr 12 22:06:38.190 HYPERVISOR: exec_cmd: vm get_status PE3 
+Apr 12 22:06:38.209 HYPERVISOR: exec_cmd: vm start PE3 
+Apr 12 22:07:20.290 HYPERVISOR: exec_cmd: vm get_status PE3 
+Apr 12 22:07:20.330 HYPERVISOR: exec_cmd: vm stop PE3 
+Apr 12 22:07:20.440 VM: VM PE3 shutdown.
+Apr 12 22:07:20.447 HYPERVISOR: exec_cmd: vm extract_config PE3 
+Apr 12 22:10:34.378 HYPERVISOR: exec_cmd: vm get_status PE3 
+Apr 12 22:10:34.431 HYPERVISOR: exec_cmd: vm start PE3 
+Apr 12 22:11:41.069 HYPERVISOR: exec_cmd: vm get_status PE3 
+Apr 12 22:11:41.093 HYPERVISOR: exec_cmd: vm stop PE3 
+Apr 12 22:11:41.212 VM: VM PE3 shutdown.
+Apr 12 22:11:41.285 HYPERVISOR: exec_cmd: vm extract_config PE3 
+Apr 12 22:11:41.321 HYPERVISOR: exec_cmd: vm get_status PE3 
+Apr 12 22:11:41.341 HYPERVISOR: exec_cmd: vm start PE3 
+Apr 12 22:13:18.578 HYPERVISOR: exec_cmd: vm extract_config PE3 
+Apr 12 22:13:21.209 HYPERVISOR: exec_cmd: vm get_status PE3 
+Apr 12 22:13:21.223 HYPERVISOR: exec_cmd: vm stop PE3 
+Apr 12 22:13:21.333 VM: VM PE3 shutdown.
+Apr 12 22:13:21.347 HYPERVISOR: exec_cmd: vm extract_config PE3 
+Apr 12 22:13:23.240 HYPERVISOR: exec_cmd: vm extract_config PE3 
+Apr 12 22:16:05.633 HYPERVISOR: exec_cmd: vm get_status PE3 
+Apr 12 22:16:05.713 HYPERVISOR: exec_cmd: vm extract_config PE3 
+Apr 12 22:16:05.804 HYPERVISOR: exec_cmd: vm delete PE3 
+Apr 12 22:16:05.804 VM: VM PE3 destroyed.
+Apr 12 22:16:05.896 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 12 22:16:06.117 HYPERVISOR: Stopped.
+Apr 12 22:16:06.117 GENERAL: reset done.
